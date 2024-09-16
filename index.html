@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ebraam Raafat Resume</title>
     <style>
+        /* Basic Reset */
         * {
             margin: 0;
             padding: 0;
@@ -13,64 +14,124 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f0f2f5;
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 20px;
             text-align: center;
+            border-bottom: 4px solid #e67e22;
         }
 
         header h1 {
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
         }
 
-        section {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        header p {
+            font-size: 1.1rem;
         }
 
-        h2 {
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            margin-top: 20px;
-        }
-
-        a {
-            color: white;
+        header a {
+            color: #e67e22;
             text-decoration: none;
         }
 
-        a:hover {
+        header a:hover {
             text-decoration: underline;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 5px;
+        }
+
+        section p, section ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        section ul {
+            padding-left: 20px;
+        }
+
+        section ul li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        /* Hover effects for links */
+        a {
+            color: #e67e22;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #d35400;
+        }
+
+        /* Making the site responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            section {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            section p, section ul li {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ebraam Raafat Hanna</h1>
-        <p style="font-size: 20px; text-decoration: underline;">Junior Web Developer</p>
-        <p><strong>Email:</strong> <a href="mailto:ebraamraafathanna@gmail.com">ebraamraafathanna@gmail.com</a> <strong>Phone:</strong> 01227430372</p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/ebraamraafat">github.com/ebraamraafat</a> | <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ebraam-raafat">linkedin.com/in/ebraam-raafat</a></p>
+        <h1>Ebraam Raafat</h1>
+        <p>Junior Web Developer</p>
+        <p><strong>Email:</strong> <a href="mailto:ebraamraafathanna@gmail.com">ebraamraafathanna@gmail.com</a> | 
+           <strong>Phone:</strong> 01227430372</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/ebraamraafat">github.com/ebraamraafat</a> | 
+           <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ebraam-raafat">linkedin.com/in/ebraam-raafat</a></p>
     </header>
 
     <section>
