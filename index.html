@@ -6,132 +6,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ebraam Raafat Resume</title>
     <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Helvetica Neue', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            line-height: 1.6;
-        }
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
 
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-            border-bottom: 4px solid #e67e22;
-        }
+.container {
+    max-width: 800px; /* Restrict the width for PC display */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-        }
+header {
+    background: linear-gradient(135deg, #601cfc, #9a67ea); /* Gradient background */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px solid #9a67ea;
+}
 
-        header p {
-            font-size: 1.1rem;
-        }
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
 
-        header a {
-            color: #e67e22;
-            text-decoration: none;
-        }
+header p {
+    font-size: 1.1rem;
+}
 
-        header a:hover {
-            text-decoration: underline;
-        }
+header a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
 
-        section {
-            background-color: white;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+header a:hover {
+    text-decoration: underline;
+}
 
-        section h2 {
-            color: #2c3e50;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #e67e22;
-            padding-bottom: 5px;
-        }
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        section p, section ul li {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-        }
+section h2 {
+    color: #601cfc;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #9a67ea;
+    padding-bottom: 5px;
+}
 
-        section ul {
-            padding-left: 20px;
-        }
+section p, section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
 
-        section ul li {
-            margin-bottom: 8px;
-        }
+section ul {
+    padding-left: 20px;
+}
 
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            font-size: 1rem;
-        }
+section ul li {
+    margin-bottom: 8px;
+}
 
-        footer p {
-            margin-bottom: 5px;
-        }
+footer {
+    background: linear-gradient(135deg, #9a67ea, #601cfc); /* Gradient footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
 
-        /* Hover effects for links */
-        a {
-            color: #e67e22;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+footer p {
+    margin-bottom: 5px;
+}
 
-        a:hover {
-            color: #d35400;
-        }
+a {
+    color: #601cfc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-        /* Making the site responsive */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
 
-            header p {
-                font-size: 1rem;
-            }
 
-            section {
-                margin: 15px;
-                padding: 15px;
-            }
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 10px; /* Space between columns */
+    padding-left: 0;
+}
 
-            section h2 {
-                font-size: 1.5rem;
-            }
+.two-columns li {
+    list-style-type: none; /* Remove default bullet points */
+}
 
-            section p, section ul li {
-                font-size: 1rem;
-            }
-        }
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, section ul li {
+        font-size: 1rem;
+    }
+
+    /* For mobile, stack the columns into one */
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Ebraam Raafat</h1>
+        <h1>Ebraam Raafat Hanna</h1>
         <p>Junior Web Developer</p>
         <p><strong>Email:</strong> <a href="mailto:ebraamraafathanna@gmail.com">ebraamraafathanna@gmail.com</a> | 
            <strong>Phone:</strong> 01227430372</p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/ebraamraafat">github.com/ebraamraafat</a> | 
-           <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ebraam-raafat">linkedin.com/in/ebraam-raafat</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/ebraamraafat">
+            ebraamraafat
+            </a> | 
+           <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ebraam-raafat">ebraam-raafat</a></p>
     </header>
 
     <section>
@@ -147,7 +167,7 @@
     </section>
 
     <section>
-        <h2>Courses</h2>
+        <h2>Courses and trainings</h2>
         <ul>
             <li>Web development (HTML, CSS, JS) by GDSC Modern Academy Mokattam</li>
         </ul>
@@ -155,7 +175,7 @@
 
     <section>
         <h2>Programming Languages and Technologies</h2>
-        <ul>
+        <ul class="two-columns">
             <li>HTML 5</li>
             <li>CSS</li>
             <li>ICDL</li>
