@@ -6,139 +6,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ebraam Raafat Resume</title>
     <style>
-       * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-    line-height: 1.6;
-}
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
 
-.container {
-    max-width: 800px; /* Restrict the width for PC display */
-    margin: 0 auto; /* Center the container */
-    padding: 20px;
-}
+        .container {
+            max-width: 900px; /* Adjust max width for PC/laptop */
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+        }
 
-header {
-    background: linear-gradient(135deg, #601cfc, #9a67ea); /* Gradient background */
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-    border-bottom: 4px solid #9a67ea;
-}
+        header {
+            background: linear-gradient(135deg, #601cfc, #9a67ea); /* Gradient background */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #9a67ea;
+        }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-}
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
 
-header p {
-    font-size: 1.1rem;
-}
+        header p {
+            font-size: 1.1rem;
+        }
 
-header a {
-    color: #e0e0e0;
-    text-decoration: none;
-}
+        header a {
+            color: #e0e0e0;
+            text-decoration: none;
+        }
 
-header a:hover {
-    text-decoration: underline;
-}
+        header a:hover {
+            text-decoration: underline;
+        }
 
-section {
-    background-color: white;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 700px; /* Narrower section width */
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-section h2 {
-    color: #601cfc;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #9a67ea;
-    padding-bottom: 5px;
-}
+        section h2 {
+            color: #601cfc;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #9a67ea;
+            padding-bottom: 5px;
+        }
 
-section p, section ul li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
+        section p, section ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
 
-section ul {
-    padding-left: 20px;
-}
+        section ul {
+            padding-left: 20px;
+        }
 
-section ul li {
-    margin-bottom: 8px;
-}
+        section ul li {
+            margin-bottom: 8px;
+        }
 
-footer {
-    background: linear-gradient(135deg, #9a67ea, #601cfc); /* Gradient footer */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    font-size: 1rem;
-}
+        footer {
+            background: linear-gradient(135deg, #9a67ea, #601cfc); /* Gradient footer */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
 
-footer p {
-    margin-bottom: 5px;
-}
+        footer p {
+            margin-bottom: 5px;
+        }
 
-a {
-    color: #601cfc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+        a {
+            color: #601cfc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
+        .two-columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+            gap: 10px; /* Space between columns */
+            padding-left: 0;
+        }
 
+        .two-columns li {
+            list-style-type: none; /* Remove default bullet points */
+        }
 
-.two-columns {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    gap: 10px; /* Space between columns */
-    padding-left: 0;
-}
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
 
-.two-columns li {
-    list-style-type: none; /* Remove default bullet points */
-}
+            header p {
+                font-size: 1rem;
+            }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
+            section {
+                margin: 15px;
+                padding: 15px;
+            }
 
-    header p {
-        font-size: 1rem;
-    }
+            section h2 {
+                font-size: 1.5rem;
+            }
 
-    section {
-        margin: 15px;
-        padding: 15px;
-    }
+            section p, section ul li {
+                font-size: 1rem;
+            }
 
-    section h2 {
-        font-size: 1.5rem;
-    }
-
-    section p, section ul li {
-        font-size: 1rem;
-    }
-
-    /* For mobile, stack the columns into one */
-    .two-columns {
-        grid-template-columns: 1fr;
-    }
-}
+            /* For mobile, stack the columns into one */
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+        }
 
     </style>
 </head>
@@ -154,60 +155,62 @@ a {
            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ebraam-raafat">ebraam-raafat</a></p>
     </header>
 
-    <section>
-        <h2>Summary</h2>
-        <p>As a seasoned web development programmer, I possess a comprehensive skill set in both front-end and back-end technologies. Proficient in HTML, CSS, JavaScript, and various frameworks, I specialize in creating responsive and visually appealing websites.</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Summary</h2>
+            <p>As a seasoned web development programmer, I possess a comprehensive skill set in both front-end and back-end technologies. Proficient in HTML, CSS, JavaScript, and various frameworks, I specialize in creating responsive and visually appealing websites.</p>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <p><strong>Bachelor of Communication and Electronics Engineering</strong><br>
-        Faculty of Engineering, Modern Academy | Sept 2022 to May 2027<br>
-        Overall GPA: 3.35/4.00</p>
-    </section>
+        <section>
+            <h2>Education</h2>
+            <p><strong>Bachelor of Communication and Electronics Engineering</strong><br>
+            Faculty of Engineering, Modern Academy | Sept 2022 to May 2027<br>
+            Overall GPA: 3.35/4.00</p>
+        </section>
 
-    <section>
-        <h2>Courses and trainings</h2>
-        <ul>
-            <li>Web development (HTML, CSS, JS) by GDSC Modern Academy Mokattam</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Courses and trainings</h2>
+            <ul>
+                <li>Web development (HTML, CSS, JS) by GDSC Modern Academy Mokattam</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Programming Languages and Technologies</h2>
-        <ul class="two-columns">
-            <li>HTML 5</li>
-            <li>CSS</li>
-            <li>ICDL</li>
-            <li>C++</li>
-            <li>OOP</li>
-            <li>Git</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Programming Languages and Technologies</h2>
+            <ul class="two-columns">
+                <li>HTML 5</li>
+                <li>CSS</li>
+                <li>ICDL</li>
+                <li>C++</li>
+                <li>OOP</li>
+                <li>Git</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Volunteer Experience</h2>
-        <p><strong>Video Editor</strong> - GDSC Modern Academy</p>
-    </section>
+        <section>
+            <h2>Volunteer Experience</h2>
+            <p><strong>Video Editor</strong> - GDSC Modern Academy</p>
+        </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Strong problem-solving and analytical skills</li>
-            <li>Excellent communication and teamwork skills</li>
-            <li>Ability to work independently and manage multiple projects</li>
-            <li>Enthusiastic about learning modern technologies and staying up-to-date with industry trends</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Strong problem-solving and analytical skills</li>
+                <li>Excellent communication and teamwork skills</li>
+                <li>Ability to work independently and manage multiple projects</li>
+                <li>Enthusiastic about learning modern technologies and staying up-to-date with industry trends</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Languages</h2>
-        <ul>
-            <li>Arabic (Native language)</li>
-            <li>English (Very good in writing and speaking)</li>
-            <li>German (Good in writing and speaking)</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>Arabic (Native language)</li>
+                <li>English (Very good in writing and speaking)</li>
+                <li>German (Good in writing and speaking)</li>
+            </ul>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Ebraam Raafat</p>
